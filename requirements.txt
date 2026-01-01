@@ -1,0 +1,19 @@
+# Airflow core dependencies (solo lo esencial)
+apache-airflow==2.7.1
+apache-airflow-providers-postgres==5.2.2
+apache-airflow-providers-http==4.0.0
+
+# Database
+SQLAlchemy==1.4.49
+
+# Data processing
+pandas==2.0.3
+pyspark==3.5.0
+findspark==2.0.1
+numpy>=1.25.0
+requests==2.31.0
+psycopg2-binary>=2.9.11
+
+# Utilities
+python-dateutil==2.8.2
+typing-extensions==4.8.0
