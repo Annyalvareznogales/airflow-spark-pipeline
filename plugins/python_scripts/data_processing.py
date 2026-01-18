@@ -54,12 +54,9 @@ def process_data(spark , df):
 
     
 if __name__ == "__main__":
-    # CSV dosyasını oku ve Spark DataFrame'i al
     spark = connection()
 
-    # DataFrame'i başka bir fonksiyona iletebilir ve işleyebilirsiniz
     process_df = process_data(spark)
 
 
-    # SparkSession'ı kapatma
     spark.stop()
