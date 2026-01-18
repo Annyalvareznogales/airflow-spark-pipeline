@@ -13,7 +13,7 @@ def main():
     if response.status_code==200:
         data = response.json()
         df = pd.DataFrame(data)
-        #df.to_csv("/home/user/Masaüstü/PythonÖrnekÇalışmalar/Airflow-Spark-Data-Pipline/datasets/ham_veri.csv",index = False)
+        
 
     create_sql_script = "CREATE TABLE IF NOT EXISTS staging.example (fiscal_year int NULL , title_description varchar(200) NULL, regular_hours float NULL, regular_gross_paid float NULL) ;"
 
