@@ -1,17 +1,22 @@
-# Airflow + Spark + Postgres Data Pipeline
+# Airflow + Spark + PostgreSQL Data Pipeline
 
-Pipeline de datos que:
-- Extrae datos desde una API pública
-- Carga datos en PostgreSQL (staging)
-- Procesa datos con Spark
-- Guarda datos procesados en schema processed
+This project implements a data pipeline that:  
+- Extracts data from a public API  
+- Loads raw data into PostgreSQL (staging schema)  
+- Processes data using Apache Spark  
+- Stores processed data in the `processed` schema  
 
-## Stack
-- Apache Airflow
-- PostgreSQL
-- PySpark
-- Docker / Docker Compose
+## Tech Stack
+- **Apache Airflow** – Workflow orchestration  
+- **PostgreSQL** – Data storage  
+- **PySpark** – Data processing  
+- **Docker / Docker Compose** – Containerization  
 
-## Run
+## Architecture Diagram
+![Pipeline Diagram](images/schema.jpeg)  
+
+## Getting Started
+Build and run the pipeline using Docker Compose:
+
 ```bash
 docker compose up --build
