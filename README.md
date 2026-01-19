@@ -13,7 +13,7 @@ This project implements a data pipeline that:
 - **Docker / Docker Compose** – Containerization  
 
 ## Architecture Diagram
-![Pipeline Diagram](images/schema.jpg)
+![Pipeline Diagram](images/schema.png)
 
 ## Getting Started
 Build and run the pipeline using Docker Compose:
